@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter App"
+            android:textSize="32sp"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/counterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="48sp"
+            android:textColor="#6200EE"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decrement"
+                android:textSize="16sp"
+                android:textColor="?android:textColorPrimary"
+                android:layout_marginEnd="64dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Increment"
+                android:textSize="16sp"
+                android:textColor="?android:textColorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/decrementButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="−"
+                android:textSize="24sp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="#BB86FC"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="32dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/incrementButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="24sp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="#6200EE"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textSize="18sp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#FF4081"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="24dp" />
+
+        <Switch
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Mode"
+            android:textSize="16sp"
+            android:textColor="?android:textColorPrimary"
+            android:layout_marginTop="32dp" />
+    </LinearLayout>
+</ScrollView>
